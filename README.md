@@ -20,7 +20,7 @@ Each model contains these fields:
 * `fields`: Properties of the entity and their types and options
 
 ### Field Options
-*`type`: Type of the field
+* `type`: Type of the field
 * `foreign`: Specifies foreign key properties:
   * `route`: API route for getting foreign reference
   * `field`: Field of foreign reference to show
