@@ -1,0 +1,75 @@
+.crop-image-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.crop-image-cropped {
+  position: absolute;
+  inset: 0;
+  width: 160px;
+  height: 160px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.crop-image-edit-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.crop-image-file-input-container {
+  width: 160px;
+  overflow: hidden;
+}
+
+.pic-upload-input::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 162px;
+  overflow: hidden;
+}
+
+.pic-upload-input::before {
+  content: ' ';
+  -webkit-user-select: none;
+  background: url('./plus.png') no-repeat center;
+  background-size: 50px 50px;
+  display: inline-block;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+  height: 160px;
+}
+
+.crop-image-field-container {
+  position: relative; /* For fixing overlay position */
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.crop-image-loading-container {
+  position: absolute;
+  inset: 0;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
