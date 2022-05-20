@@ -31,10 +31,12 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route path={'/login'} component={Pages.Login}/>
-                <PrivateRoute exact path={'/'} component={Pages.Home}/>
-                <PrivateRoute exact path={'/change_password'} component={Pages.ChangePassword}/>
-                {routes}
+                <>
+                    <Route path={'/login'} component={Pages.Login}/>
+                    <PrivateRoute exact path={'/'} component={Pages.Home}/>
+                    <PrivateRoute exact path={'/change_password'} component={Pages.ChangePassword}/>
+                    {routes}
+                </>
             </Switch>
         </Router>
     );
