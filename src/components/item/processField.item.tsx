@@ -354,7 +354,7 @@ export default function ProcessFieldItem(props: IProcessTypeItemProps) {
                         value={time}
                         onChange={changeTime}
                         style={{width: '50px'}}
-                    />
+                    >{' '}</TimeField>
                 </div>;
                 break;
             case 'file':
