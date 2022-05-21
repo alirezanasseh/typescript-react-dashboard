@@ -350,6 +350,7 @@ export default function ProcessFieldItem(props: IProcessTypeItemProps) {
                 break;
             case 'time':
                 result = <div>
+                    {/* @ts-ignore */}
                     <TimeField
                         value={time}
                         onChange={changeTime}
