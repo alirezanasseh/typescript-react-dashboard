@@ -23,7 +23,7 @@ function App() {
         routes.push(<PrivateRoute key={'edit_' + index} path={'/' + model.route + '/:id'}>
             <Item key={'edit_' + index} model={model}/>
         </PrivateRoute>);
-        routes.push(<PrivateRoute key={'list_' + index} path={'/' + model.route}>
+        routes.push(<PrivateRoute key={'list_' + index} exact path={'/' + model.route}>
             <List model={model}/>
         </PrivateRoute>);
     }
